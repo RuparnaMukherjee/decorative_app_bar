@@ -1,4 +1,4 @@
-library decorativeAppBar;
+library decorative_app_bar;
 
 import 'package:flutter/material.dart';
 
@@ -59,6 +59,7 @@ import 'package:flutter/material.dart';
 // }
 
 class DecorativeAppBar {
+  // ignore: non_constant_identifier_names
   AppBar(
       {@required double barHeight,
       @required double barPad,
@@ -66,7 +67,7 @@ class DecorativeAppBar {
       Color background = Colors.white,
       Color gradient1 = Colors.white,
       Color gradient2 = const Color(0xffffccbc),
-      Widget extra}) {
+      Widget extra}) async {
     double z = barHeight - barPad;
     return Container(
         height: barHeight,
