@@ -8,7 +8,7 @@ class DecorativeAppBar extends StatefulWidget {
   final Color gradient1, gradient2, background;
   final Widget extra;
 
-  const DecorativeAppBar(
+  DecorativeAppBar(
       {Key key,
       @required this.barHeight,
       @required this.barPad,
