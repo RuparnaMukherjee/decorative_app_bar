@@ -1,6 +1,7 @@
 library decorative_app_bar;
 
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 // class DecorativeAppBar extends StatefulWidget {
 //   double barHeight, barPad, radii;
@@ -59,14 +60,14 @@ import 'package:flutter/material.dart';
 // }
 
 class DecorativeAppBar {
-  static appBar(
+  appBar(
       {@required double barHeight,
       @required double barPad,
       @required double radii,
       Color background = Colors.white,
       Color gradient1 = Colors.white,
       Color gradient2 = const Color(0xffffccbc),
-      Widget extra}) {
+      Widget extra}) async {
     double z = barHeight - barPad;
     return Container(
         height: barHeight,
