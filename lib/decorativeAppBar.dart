@@ -59,7 +59,7 @@ import 'package:flutter/material.dart';
 // }
 
 class DecorativeAppBar {
-  appBar(
+  static Future appBar(
       {@required double barHeight,
       @required double barPad,
       @required double radii,
