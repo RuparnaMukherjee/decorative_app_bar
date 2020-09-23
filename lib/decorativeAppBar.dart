@@ -59,14 +59,14 @@ import 'package:flutter/material.dart';
 // }
 
 class DecorativeAppBar {
-  static Future appBar(
+  appBar(
       {@required double barHeight,
       @required double barPad,
       @required double radii,
       Color background = Colors.white,
       Color gradient1 = Colors.white,
       Color gradient2 = const Color(0xffffccbc),
-      Widget extra}) async {
+      Widget extra}) {
     double z = barHeight - barPad;
     return Container(
         height: barHeight,
