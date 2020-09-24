@@ -1,8 +1,8 @@
 name: decorative_app_bar
-description: A Flutter Package for Decorating Your AppBar
-version: 0.0.1
+description: A Flutter Package for Decorating Your AppBar and Adding Extra Widgets
+version: 0.0.2
 author: Ruparna Mukherjee <rupu3097@gmail.com>
-homepage:
+homepage: https://github.com/Ruparna97/decorative_app_bar
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
