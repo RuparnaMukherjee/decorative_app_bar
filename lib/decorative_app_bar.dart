@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 class DecorativeAppBar extends StatefulWidget {
   final double barHeight, barPad, radii;
-  final Color gradient1, gradient2, background;
-  final Widget extra;
+  final Color? gradient1, gradient2, background;
+  final Widget? extra;
 
   DecorativeAppBar(
-      {Key key,
-      @required this.barHeight,
-      @required this.barPad,
-      @required this.radii,
+      {Key? key,
+      required this.barHeight,
+      required this.barPad,
+      required this.radii,
       this.background = Colors.white,
       this.gradient1 = Colors.white,
       this.gradient2 = const Color(0xffffccbc),
@@ -29,10 +29,10 @@ class _DecorativeAppBarState extends State<DecorativeAppBar> {
         height: widget.barHeight,
         decoration: BoxDecoration(
           gradient:
-              LinearGradient(colors: [widget.gradient1, widget.gradient2]),
+              LinearGradient(colors: [widget.gradient1!, widget.gradient2!]),
         ),
         child: Stack(children: [
-          if (widget.extra != null) widget.extra,
+          if (widget.extra != null) widget.extra!,
           Column(
             children: [
               Container(
