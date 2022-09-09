@@ -5,7 +5,7 @@ author: Ruparna Mukherjee <rupu3097@gmail.com>
 homepage: https://github.com/Ruparna97/decorative_app_bar
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0 <2.0.0"
 
 dependencies:
